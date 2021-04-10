@@ -1,1 +1,1 @@
-# JTravisDaniel.github.io
+# JTDaniel.github.io
