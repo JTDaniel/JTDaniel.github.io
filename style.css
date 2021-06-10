@@ -121,10 +121,12 @@ iframe {
 }
   
 .Resume {
+  border-radius: 15%;
   padding: 100px;
   margin: auto;
   height: 700px;
   width: 50%;
   overflow: scroll;
+ 
 }
   
