@@ -60,7 +60,9 @@ li {
 
 iframe {
   margin: auto;
-  width: 60%;
+  width 80%;
+  max-width: 1000px;
+  min-width: 400px;
 }
 
 
@@ -69,7 +71,7 @@ iframe {
   -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
   -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
   box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
-  width: 100%;
+  width: 50%;
   margin: auto;
   
 }
@@ -125,9 +127,11 @@ iframe {
   
 .Resume {
   border-radius: 15%;
+  border: 2px dotted white;
   padding: 100px;
   margin: auto;
-  width: 60%;
+  width: 100%;
+  max-height: 800px;
   overflow: scroll;
  
 }
