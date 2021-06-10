@@ -60,7 +60,7 @@ li {
 
 iframe {
   margin: auto;
-  width 80%;
+  width: 80%;
   max-width: 1000px;
   min-width: 400px;
   min-height: 400px;
@@ -131,7 +131,8 @@ iframe {
   border: 2px dotted white;
   padding: 100px;
   margin: auto;
-  width: 100%;
+  width: 60%;
+  
   max-height: 800px;
   overflow: scroll;
  
