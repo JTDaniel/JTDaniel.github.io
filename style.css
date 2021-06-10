@@ -102,10 +102,10 @@ li {
 }
   
 .Resume {
-  padding: 20px;
+  padding: 100px;
   margin: 0 auto;
   height: 700px;
-  width: 100%;
+  width: 50%;
   overflow: scroll;
 }
   
