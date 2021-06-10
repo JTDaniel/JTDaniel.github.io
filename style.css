@@ -13,6 +13,7 @@ body {
 
 div {
   margin: auto;
+  width 80%;
   max-width: 1000px;
   min-width: 400px;
 }
@@ -68,8 +69,7 @@ iframe {
   -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
   -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
   box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
-  width: 400px;
-  padding: 60px auto;
+  width: 100%;
   margin: auto;
   
 }
