@@ -103,7 +103,7 @@ iframe {
   border-radius: 25%;
   padding: 5px 10px;
   text-align: center;
-  width: 100%;
+  width: 50%;
   font-family: Helvetica;
   font-size: 18px;
   font-weight: bold;
@@ -126,8 +126,7 @@ iframe {
   border-radius: 15%;
   padding: 100px;
   margin: auto;
-  height: 700px;
-  width: 50%;
+  width: 400px;
   overflow: scroll;
  
 }
