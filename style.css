@@ -59,6 +59,7 @@ li {
 
 iframe {
   margin: auto;
+  width: 60%;
 }
 
 
@@ -126,7 +127,7 @@ iframe {
   border-radius: 15%;
   padding: 100px;
   margin: auto;
-  width: 400px;
+  width: 60%;
   overflow: scroll;
  
 }
