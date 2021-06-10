@@ -88,4 +88,11 @@ li {
   border-radius: 25%;
 }
   
-
+.Resume {
+  padding: 20px;
+  margin: 0 auto;
+  height: 700px;
+  width: 100%;
+  overflow: scroll;
+}
+  
