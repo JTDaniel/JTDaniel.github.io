@@ -64,6 +64,7 @@ iframe {
   min-width: 400px;
   min-height: 400px;
   background-image: url("/files/Blue Background.jpg");
+  background-repeat: no-repeat;
 }
 
 
@@ -128,11 +129,9 @@ iframe {
   
 .Resume {
   border-radius: 15%;
-  border: 2px dotted white;
   padding: 100px;
   margin: auto;
   width: 100%;
-  background-image: "/files/Blue Background.jpg";
   max-height: 800px;
   overflow: scroll;
  
