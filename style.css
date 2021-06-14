@@ -65,6 +65,7 @@ iframe {
   min-height: 400px;
   background-image: url("/files/Blue Background.jpg");
   background-repeat: no-repeat;
+  background-size: auto;
 }
 
 
