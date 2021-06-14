@@ -129,6 +129,7 @@ iframe {
   
 .Resume {
   border-radius: 15%;
+  border: rgba(0, 0, 0, 0)
   padding: 100px;
   margin: auto;
   width: 100%;
