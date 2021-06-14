@@ -63,7 +63,7 @@ iframe {
   max-width: 1000px;
   min-width: 400px;
   min-height: 400px;
-  background-image: "/files/Blue Background.jpg";
+  background-image: url("/files/Blue Background.jpg");
 }
 
 
