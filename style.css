@@ -89,6 +89,11 @@ iframe {
   text-align: center;
 }
 
+.Contact li {
+  display: inline-block;
+  position: fixed;
+}
+
 .Contact .Email {
   background-color: white;
   margin: 0 auto;
