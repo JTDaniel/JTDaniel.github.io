@@ -92,47 +92,16 @@ iframe {
 .Contact li {
   display: inline-block;
   position: fixed;
-}
-
-.Contact .Email {
-  background-color: white;
-  margin: 0 auto;
+  background-color: rgba(78, 78, 78, 0.774);
   color: black;
   border-radius: 25%;
-  padding: 5px 10px;
-  text-align: center;
-  width: 100%;
+  padding: 515px;
   font-family: Helvetica;
   font-size: 18px;
   font-weight: bold;
 }
 
-.Contact .LinkedIn {
-  background-color: white;
-  margin: 0 auto;
-  color: black;
-  border-radius: 25%;
-  padding: 5px 10px;
-  text-align: center;
-  width: 50%;
-  font-family: Helvetica;
-  font-size: 18px;
-  font-weight: bold;
-}
 
-.Contact .Phone {
-  background-color: white;
-  margin: 10 auto;
-  color: black;
-  border-radius: 25%;
-  padding: 5px 10px;
-  text-align: center;
-  width: 40%;
-  font-family: Helvetica;
-  font-size: 18px;
-  font-weight: bold;
-}
-  
 .Resume {
   border-radius: 15%;
   padding: 50px;
