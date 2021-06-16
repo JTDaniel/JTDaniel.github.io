@@ -80,6 +80,7 @@ iframe {
 }
 
 .Contact {
+  display: inline-block;
   position: fixed;
   background-color: rgba(78, 78, 78, 0.774);
   border: 2px dotted white;
@@ -88,17 +89,14 @@ iframe {
   min-width: 300px;
   max-width: 800px;
   margin: 10px auto;
-  text-align: center;
 }
 
 .Contact li {
-  display: inline-block;
   color: black;
-  border-radius: 25%;
-  padding: 515px;
   font-family: Helvetica;
   font-size: 18px;
   font-weight: bold;
+  margin: 0 auto;
 }
 
 
