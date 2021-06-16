@@ -81,6 +81,7 @@ iframe {
 
 .Contact {
   position: fixed;
+  background-color: rgba(78, 78, 78, 0.774);
   border: 2px dotted white;
   padding: 10px;
   height: 60px;
@@ -92,7 +93,6 @@ iframe {
 
 .Contact li {
   display: inline-block;
-  background-color: rgba(78, 78, 78, 0.774);
   color: black;
   border-radius: 25%;
   padding: 515px;
