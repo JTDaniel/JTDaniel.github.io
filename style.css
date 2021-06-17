@@ -60,9 +60,10 @@ li {
 iframe {
   margin: auto;
   width: 80%;
-  max-width: 1000px;
-  min-width: 400px;
-  min-height: 400px;
+  position:static;
+  left:20%;
+  right: 20%;
+  height: fit-content;
   background-image: url("/files/Blue Background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -80,23 +81,23 @@ iframe {
 }
 
 .Contact {
-  display: inline-block;
+  text-align: center;
+  display: inline;
   position: fixed;
   background-color: rgba(78, 78, 78, 0.774);
   border: 2px dotted white;
-  padding: 10px;
+  padding: 10px 100px;
   height: 60px;
-  min-width: 300px;
-  max-width: 800px;
-  margin: 10px auto;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
 }
 
 .Contact li {
+  display: inline;
+  text-align: center;
   color: black;
-  font-family: Helvetica;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 auto;
+  margin: 15px;
 }
 
 
