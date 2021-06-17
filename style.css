@@ -83,6 +83,7 @@ a {
 .Contact {
   text-align: center;
   position: fixed;
+  top: 0px;
   background-color: rgba(78, 78, 78, 0.774);
   border: 2px dotted white;
   padding: 10px 100px;
