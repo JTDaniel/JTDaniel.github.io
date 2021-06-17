@@ -107,6 +107,8 @@ a {
 
 .Contact img {
   display: inline-block;
+  height: 30px;
+  width: 30px;
 }
 
 .Resume {
