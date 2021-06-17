@@ -63,7 +63,7 @@ iframe {
   position:static;
   left:20%;
   right: 20%;
-  height: fit-content;
+  height:max-content;
   background-image: url("/files/Blue Background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
