@@ -117,13 +117,11 @@ a {
   margin: auto;
   padding: 10px;
   width: 80%;
+  height: 900px;
   position:static;
   left:20%;
   right: 20%;
-  height: 600px;
-  background-image: url("files/Blue Background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: rgba(78, 78, 78, 0.774);
   overflow: scroll;
 }
  
