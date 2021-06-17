@@ -79,7 +79,7 @@ a {
   width: 100%;
   font-family: Helvetica;
   font-size: 18px;
-  display: inline-block;
+  display: inline;
 }
 
 
@@ -102,13 +102,15 @@ a {
   text-align: center;
   color: black;
   margin: auto;
+  position: relative;
+  top:25%;
 }
 
 
 .Contact img {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
+  display: inline;
+  height: 26px;
+  margin-right: 10px;
 }
 
 .Resume {
