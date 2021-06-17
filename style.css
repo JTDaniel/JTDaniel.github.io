@@ -59,18 +59,6 @@ li {
     font-size: 18px;
 }
 
-iframe {
-  margin: auto;
-  width: 80%;
-  position:static;
-  left:20%;
-  right: 20%;
-  height:max-content;
-  background-image: url("/files/Blue Background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
 
 .Headshot {
   border-radius: 50%;
@@ -114,12 +102,17 @@ a {
 
 
 .Resume {
-  border-radius: 15%;
-  padding: 50px;
   margin: auto;
-  width: 100%;
-  max-height: 800px;
+  width: 80%;
+  position:static;
+  left:20%;
+  right: 20%;
+  height: 600px;
+  background-image: url("/files/Blue Background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   overflow: scroll;
+}
  
 }
   
