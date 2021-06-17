@@ -121,7 +121,7 @@ a {
   margin: auto;
   padding: 20px;
   background: rgba(78, 78, 78, 0.774);
-  border-radius: 50%;
+  border-radius: 5%;
   border: 2px dotted white;
 }
 
