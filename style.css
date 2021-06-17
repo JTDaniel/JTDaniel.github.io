@@ -80,9 +80,18 @@ iframe {
   
 }
 
+a {
+  color: aliceblue;
+  line-height: 1.3em;
+  text-align: left;
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 18px
+}
+
+
 .Contact {
   text-align: center;
-  display: inline;
   position: fixed;
   background-color: rgba(78, 78, 78, 0.774);
   border: 2px dotted white;
@@ -94,10 +103,11 @@ iframe {
 }
 
 .Contact li {
-  display: inline;
+  display: inline-block;
+  width: 25%;
   text-align: center;
   color: black;
-  margin: 15px;
+  margin: auto;
 }
 
 
