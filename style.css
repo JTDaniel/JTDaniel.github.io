@@ -84,7 +84,7 @@ a {
 
 .Contact {
   text-align: center;
-  position: fixed;
+  /*position: fixed;*/
   top: 0px;
   background-color: rgba(78, 78, 78, 0.774);
   border: 2px dotted white;
@@ -121,6 +121,8 @@ a {
 .Gallery{
   margin: auto;
   padding: 20px;
+  position: static;
+  bottom: 10px;
   background: rgba(78, 78, 78, 0.774);
   border-radius: 5%;
   border: 2px dotted white;
