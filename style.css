@@ -121,7 +121,7 @@ a {
   left:20%;
   right: 20%;
   height: 600px;
-  background-image: url("/files/Blue Background.jpg");
+  background-image: url("files/Blue Background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   overflow: scroll;
