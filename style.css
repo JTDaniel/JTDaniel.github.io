@@ -1,5 +1,7 @@
 
 
+
+
 body {
   /* Old browsers */
   background: #141E30;
@@ -115,5 +117,19 @@ a {
   overflow: scroll;
 }
  
+.Gallery{
+  margin: auto;
+  padding: 20px;
+  background: rgba(78, 78, 78, 0.774);
+  border-radius: 50%;
+  border: 2px dotted white;
+}
+
+.Row {
+  display: inline-block;
+  margin:  30px auto;
+  position: static;
+  left: 20%;
+  right: 20%;
 }
   
