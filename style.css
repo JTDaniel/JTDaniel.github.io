@@ -78,7 +78,8 @@ a {
   text-align: left;
   width: 100%;
   font-family: Helvetica;
-  font-size: 18px
+  font-size: 18px;
+  display: inline-block;
 }
 
 
@@ -103,6 +104,10 @@ a {
   margin: auto;
 }
 
+
+.Contact img {
+  display: inline-block;
+}
 
 .Resume {
   margin: auto;
