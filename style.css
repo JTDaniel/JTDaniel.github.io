@@ -142,4 +142,21 @@ a {
   left: 20%;
   right: 20%;
 }
-  
+
+
+.linkrow img  {
+  display: inline-block;
+  margin: 30px;
+  padding: 25px;
+  border: 2px solid white;
+  border-radius:30%;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 50px;
+  width:200px;
+}
+
+.linkrow img:hover {
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
