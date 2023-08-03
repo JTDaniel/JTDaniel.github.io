@@ -1,10 +1,15 @@
 
 body, html {
   height: 100%;
-  background-color: rgb(25,25,25);;
+  background-image: linear-gradient(#0c1d3a,rgb(13, 11, 21));
   color: white;
   background-attachment: fixed;
+  font-family: 'Stencil Std', fantasy;
   
+}
+
+h1 {
+  font-family: 'Stencil Std', fantasy;
 }
 
 div {
@@ -27,6 +32,7 @@ div {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding-left: ;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -42,12 +48,37 @@ div {
 }
 
 .AboutMe{
-  background-color: rgba(15, 15, 15, 1);
+  width: 40%;
+  min-width: 400px;
   padding: 5% ;
-  margin: 10%;
   font-size: larger;
+  border-radius: 10%;
+  float: left;
 }
 
-.AboutMe H2 {
+.AboutMe h2 {
   font-size:xx-large;
+}
+
+.AboutMe p{
+  color: rgb(231, 230, 230);
+}
+
+.Explore {
+  width: 40%;
+  min-width: 400px;
+  padding: 5% ;
+  margin-left: 50%;
+  font-size: larger;
+  border-radius: 10%;
+}
+
+/* .below { */
+  position: relative;
+  background-color: black;
+  background-size: cover;
+  margin-top: auto;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
 }
