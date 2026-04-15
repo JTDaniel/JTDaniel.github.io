@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — J. Travis Daniel | Automation, Controls &amp; Manufacturing Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ── Variables ─────────────────────────────────────────── */
+    :root {
+      --green:       #2e6b42;
+      --green-mid:   #3d8a56;
+      --amber:       #9a5e20;
+      --text:        #1a1f18;
+      --text-2:      #3d4a38;
+      --text-muted:  #7a8a74;
+      --border:      #d4ddd0;
+      --bg:          #ffffff;
+      --bg-rule:     #c8d4c2;
+    }
+
+    /* ── Reset ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #e8ede4;
+      font-family: 'Inter', Georgia, serif;
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Screen wrapper ────────────────────────────────────── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    .print-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+    }
+
+    .print-bar a {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--green);
+      text-decoration: none;
+      padding: 0.5rem 1.1rem;
+      border: 1.5px solid var(--green);
+      border-radius: 5px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .print-bar a:hover {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .back-link {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-right: auto;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover { color: var(--text); }
+
+    /* ── Resume sheet ──────────────────────────────────────── */
+    .resume {
+      background: var(--bg);
+      padding: 3rem 3.5rem;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+      border-radius: 4px;
+    }
+
+    /* ── Header ────────────────────────────────────────────── */
+    .resume-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--text);
+      gap: 2rem;
+    }
+
+    .resume-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      line-height: 1.1;
+    }
+
+    .resume-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-top: 0.4rem;
+    }
+
+    .resume-contact {
+      text-align: right;
+      font-size: 0.82rem;
+      color: var(--text-2);
+      line-height: 1.8;
+    }
+
+    .resume-contact a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    .resume-contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Sections ──────────────────────────────────────────── */
+    .resume-section {
+      margin-bottom: 1.75rem;
+    }
+
+    .resume-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-head {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.6rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── Summary ───────────────────────────────────────────── */
+    .summary-text {
+      font-size: 0.88rem;
+      line-height: 1.72;
+      color: var(--text-2);
+    }
+
+    /* ── Experience ────────────────────────────────────────── */
+    .exp-item {
+      margin-bottom: 1.4rem;
+      padding-bottom: 1.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .exp-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .exp-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.15rem;
+    }
+
+    .exp-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .exp-date {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      white-space: nowrap;
+      font-style: italic;
+    }
+
+    .exp-company {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 0.65rem;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .exp-bullets li {
+      font-size: 0.83rem;
+      line-height: 1.6;
+      color: var(--text-2);
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .exp-bullets li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-size: 0.7rem;
+      top: 0.18em;
+    }
+
+    /* ── Education ─────────────────────────────────────────── */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .edu-degree {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .edu-school-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--green);
+      margin-top: 0.15rem;
+    }
+
+    .edu-note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+
+    /* ── Skills ────────────────────────────────────────────── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem 2rem;
+    }
+
+    .skill-group {
+      font-size: 0.82rem;
+      color: var(--text-2);
+      line-height: 1.5;
+    }
+
+    .skill-group strong {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: var(--text);
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.15rem;
+    }
+
+    /* ── Projects ──────────────────────────────────────────── */
+    .project-item {
+      margin-bottom: 0.9rem;
+    }
+
+    .project-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .proj-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .proj-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .proj-link {
+      font-size: 0.78rem;
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    .proj-link:hover {
+      text-decoration: underline;
+    }
+
+    .proj-desc {
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: var(--text-2);
+      margin-top: 0.2rem;
+    }
+
+    /* ── Community ─────────────────────────────────────────── */
+    .community-text {
+      font-size: 0.83rem;
+      color: var(--text-2);
+      line-height: 1.65;
+    }
+
+    .community-text strong {
+      color: var(--text);
+    }
+
+    /* ── Print styles ──────────────────────────────────────── */
+    @media print {
+      body {
+        background: white;
+      }
+
+      .page-wrap {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .print-bar {
+        display: none;
+      }
+
+      .resume {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 1.5rem 2rem;
+        min-height: 100vh;
+      }
+
+      .resume-name { font-size: 1.9rem; }
+
+      a { color: inherit !important; }
+    }
+
+    @media (max-width: 600px) {
+      .resume {
+        padding: 2rem 1.5rem;
+      }
+
+      .resume-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .resume-contact {
+        text-align: left;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrap">
+    <div class="print-bar">
+      <a href="index.html" class="back-link">← Portfolio</a>
+      <a href="#" onclick="window.print(); return false;">Print / Save PDF</a>
+    </div>
+
+    <div class="resume">
+
+      <!-- Header -->
+      <header class="resume-header">
+        <div>
+          <div class="resume-name">J. Travis Daniel</div>
+          <div class="resume-title">Automation &amp; Controls Engineer</div>
+        </div>
+        <div class="resume-contact">
+          520-371-9685 &nbsp;·&nbsp; <a href="mailto:trvsdaniel@gmail.com">trvsdaniel@gmail.com</a><br>
+          <a href="https://www.linkedin.com/in/j-travis-daniel/" target="_blank">linkedin.com/in/j-travis-daniel</a><br>
+          <a href="https://github.com/JTDaniel" target="_blank">github.com/JTDaniel</a>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <section class="resume-section">
+        <div class="section-head">Summary</div>
+        <p class="summary-text">
+          Automation and controls engineer with a track record at early-stage hardware startups. I span the full technical stack — PLC and controls architecture, SCADA/HMI, MES software, and mechanical design in CAD — and work best in fast-paced, interdisciplinary environments where the role adapts to the problem. Twice been the hire who walks into a blank factory floor and builds the production system from the ground up.
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section class="resume-section">
+        <div class="section-head">Experience</div>
+
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-title">Manufacturing Engineer</span>
+            <span class="exp-date">Oct 2025 – Present</span>
+          </div>
+          <div class="exp-company">Geoship SPC</div>
+          <ul class="exp-bullets">
+            <li>Architected and built a full-stack company-wide software suite: MES, inventory tracking, lot tracking, training &amp; certification management, materials science data entry and aggregation, and user authentication</li>
+            <li>Deployed all services as containerized web applications on the factory LAN using Docker; system achieved full MES functionality including production tracking, OEE, yield, quality control, rework, and product genealogy</li>
+            <li>Designed and implemented quality control and rework workflows enabling data-driven process improvement and compliance traceability</li>
+            <li>Sole architect of the company MES — designed modular system structure, database schemas, and Docker-based containerization, driving feature scope through direct manufacturing expertise in production tracking, QC, OEE, and process statistical analysis</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-title">Automation Engineer</span>
+            <span class="exp-date">Mar 2025 – Oct 2025</span>
+          </div>
+          <div class="exp-company">Neomatrix · Colorado Springs, CO</div>
+          <ul class="exp-bullets">
+            <li>Developed Ignition Perspective HMI/SCADA applications and PLC programs for industrial automation clients across multiple manufacturing verticals</li>
+            <li>Built recipe and lot tracking systems using Ignition and MSSQL to drive production metrics and process visibility</li>
+            <li>Delivered end-to-end automation projects from electrical design through software commissioning and client training</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-row">
+            <span class="exp-title">Automation Engineer</span>
+            <span class="exp-date">May 2023 – Dec 2024</span>
+          </div>
+          <div class="exp-company">Diamond Age 3D</div>
+          <ul class="exp-bullets">
+            <li>Architected the full controls system for an automated light gauge steel housing production line — a first-of-kind high-speed system producing structural building components autonomously</li>
+            <li>Programmed FANUC robots across all 5 production cells and developed Ignition Vision HMI for operator control and production monitoring</li>
+            <li>Architected AutomationDirect P3000 PLC system using object-oriented, modular programming with cross-PLC EtherNet/IP communications; integrated IO-Link sensors, Banner safety controllers, and VFDs</li>
+            <li>Contributed mechanical design of custom tooling, jigs, and fixtures in SolidWorks — spanning the full path from concept CAD model to commissioned production line</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- Skills -->
+      <section class="resume-section">
+        <div class="section-head">Technical Skills</div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <strong>Controls &amp; PLC</strong>
+            Allen-Bradley ControlLogix · AutomationDirect P3000 · Motion Control · VFDs · Process Sequencing
+          </div>
+          <div class="skill-group">
+            <strong>SCADA &amp; HMI</strong>
+            Ignition Perspective · Ignition Vision · OEE · Recipe &amp; Lot Tracking · Andon
+          </div>
+          <div class="skill-group">
+            <strong>Industrial Networks</strong>
+            EtherNet/IP · IO-Link · Banner Safety Systems · Industrial I/O Integration
+          </div>
+          <div class="skill-group">
+            <strong>CAD &amp; Mechanical</strong>
+            SolidWorks (CSWA) · Onshape · FANUC Robotics · Machine Design · Jigs &amp; Fixtures
+          </div>
+          <div class="skill-group">
+            <strong>Software &amp; Systems</strong>
+            Python · MSSQL · MongoDB · Docker
+          </div>
+          <div class="skill-group">
+            <strong>Manufacturing &amp; Electrical</strong>
+            MES · Production Tracking · Quality Control · Controls Schematics · Sensor Retrofits
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="resume-section">
+        <div class="section-head">Education</div>
+        <div class="edu-row">
+          <div>
+            <div class="edu-degree">Bachelor of Science, Electrical Engineering</div>
+            <div class="edu-school-name">Arizona State University &nbsp;·&nbsp; <em>Cum Laude</em></div>
+            <div class="edu-note">Senior Design: Two-wheeled self-balancing robot with real-time embedded PID control algorithms.</div>
+          </div>
+          <span class="exp-date">May 2024</span>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="resume-section">
+        <div class="section-head">Certifications</div>
+        <div class="exp-row">
+          <div>
+            <span class="exp-title">SolidWorks Certified Associate (CSWA)</span>
+            <div class="exp-company">Dassault Systèmes</div>
+          </div>
+          <span class="exp-date">Feb 2017</span>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="resume-section">
+        <div class="section-head">Notable Projects</div>
+
+        <div class="project-item">
+          <div class="proj-title-row">
+            <span class="proj-name">Light Gauge Steel Production Line Controls</span>
+            <span>·</span>
+            <span class="proj-link">Diamond Age 3D</span>
+          </div>
+          <div class="proj-desc">Full controls architecture for an automated structural component manufacturing line. PLC-based system with motion control, process sequencing, and cross-domain integration.</div>
+        </div>
+
+        <div class="project-item">
+          <div class="proj-title-row">
+            <span class="proj-name">Factory-Wide MES &amp; Software Suite</span>
+            <span>·</span>
+            <span class="proj-link">Geoship SPC</span>
+          </div>
+          <div class="proj-desc">Complete manufacturing software ecosystem built from the ground up: MES, inventory, lot tracking, training management, materials science data, user auth — deployed in Docker on factory LAN.</div>
+        </div>
+
+        <div class="project-item">
+          <div class="proj-title-row">
+            <span class="proj-name">Self-Balancing Robot</span>
+            <span>·</span>
+            <a href="https://github.com/JTDaniel/SegwayRobot" class="proj-link" target="_blank">github.com/JTDaniel/SegwayRobot</a>
+          </div>
+          <div class="proj-desc">Two-wheeled self-balancing robot (senior capstone). Real-time PID control on embedded hardware; covered mechanical design, motor control, sensor fusion, and firmware.</div>
+        </div>
+      </section>
+
+      <!-- Community -->
+      <section class="resume-section">
+        <div class="section-head">Community</div>
+        <p class="community-text">
+          <strong>FIRST Robotics Mentor</strong> (May 2020 – Present) — 6 years mentoring a competitive FIRST Robotics team. Guided students through full robot design and build cycles from concept to competition.
+        </p>
+      </section>
+
+    </div><!-- /resume -->
+  </div><!-- /page-wrap -->
+
+</body>
+</html>
